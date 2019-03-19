@@ -15,7 +15,6 @@ render(){
         <Title></Title>
         {this.state.friends.map(friends => (
             <Card
-                // shuffleScoreCard = {this.shuffleScoreCard}
                 id={friends.id}
                 key={friends.id}
                 image={friends.image}

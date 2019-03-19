@@ -1,0 +1,10 @@
+.imgCard {
+    background: red;
+    border-radius: 2px;
+    height: 200px;
+    margin: 1rem;
+    margin-top: 10px;
+    position: relative;
+    width: 200px;
+    overflow: hidden;
+  }
