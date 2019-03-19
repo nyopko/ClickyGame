@@ -1,22 +1,27 @@
 .title{
+    margin-top: 2% ;
     color: white;
     text-align: center;
+    font-family: 'Roboto Mono', monospace;
   
 }
 .score{
     text-align: center;
     color: white;
+    font-family: 'Roboto Mono', monospace;
 }
 .message{
     text-align: center;
     margin-top: 0;
     color: white;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .info{
     text-align: center;
     margin-top: 0;
     color: white;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body{

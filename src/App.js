@@ -24,7 +24,7 @@ class App extends Component {
             clickedPics.push(id)
 
             if(clickedPics.length === 12){
-                this.setState({score: 12, message: "You win!", clickedPics: []})
+                this.setState({score: 12, message: "You win! Click on another picture to play again!", clickedPics: []})
                 return;
             }
             this.setState({friends, clickedPics, score: clickedPics.length, message:""});
