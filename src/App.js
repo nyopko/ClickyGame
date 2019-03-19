@@ -10,24 +10,24 @@ class App extends Component {
         friends,
         clickedPics: [],
         score:0,
-        goal: 9,
-        status:"",
+        goal: 12,
+        message:"",
     };
 
     shufflePics = id => {
         let clickedPics = this.state.clickedPics;
 
         if(clickedPics.includes(id)){
-            this.setState({clickedPics: [], score: 0, status: "You lose!"});
+            this.setState({clickedPics: [], score: 0, message: "You lose!"});
             return;
         } else{
             clickedPics.push(id)
 
-            if(clickedPics.length === 9){
-                this.setState({score: 9, status: "You win!", clickedPics: []})
+            if(clickedPics.length === 12){
+                this.setState({score: 12, message: "You win!", clickedPics: []})
                 return;
             }
-            this.setState({friends, clickedPics, score: clickedPics.length, status:""});
+            this.setState({friends, clickedPics, score: clickedPics.length, message:""});
 
             for (let i = friends.length -1; i> 0; i--) {
                 let j = Math.floor(Math.random() * (i+1));
@@ -41,8 +41,8 @@ render(){
         <div>
         <Title
         total={this.state.score}
-        goal={9}
-        status={this.state.status}
+        goal={12}
+        message={this.state.message}
         />
         
         <Wrapper>
